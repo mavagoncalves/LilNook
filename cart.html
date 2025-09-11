@@ -1,0 +1,87 @@
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cart — LilNook</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="page-grid">
+        <header class="site-header" role="banner">
+            <div class="brand">
+                <img src="assets/bookicon.png" alt="LilNook logo" class="logo">
+            <div>
+                <h1>LilNook</h1>
+            </div>
+        </div>
+            
+            <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="main-content" role="main">
+            <section class="cart-content">
+                <h2>Your Cart</h2>
+                <p class="cart-note">*This is a static representation of your cart.*</p>
+                
+                <div class="cart-item">
+                    <button class="btn-remove" aria-label="Remove Beach Read">x</button>
+                    
+                    <div class="cart-cover">
+                      <img src="assets/beachread.jpeg" alt="Cover: Beach Read" />
+                    </div>
+                  
+                    <div class="cart-info">
+                      <h3>Beach Read</h3>
+                      <p class="author">Emily Henry</p>
+                      <p class="qty">Quantity: 1</p>
+                    </div>
+                  
+                    <div class="cart-price">
+                      <p>105,00kr</p>
+                    </div>
+                  </div>
+                  
+                  <div class="cart-item">
+                    <button class="btn-remove" aria-label="Remove The Hobbit">x</button>
+                    
+                    <div class="cart-cover">
+                      <img src="assets/thehobbit.jpeg" alt="Cover: The Hobbit" />
+                    </div>
+                    <div class="cart-info">
+                      <h3>The Hobbit</h3>
+                      <p class="author">J.R.R Tolkien</p>
+                      <p class="qty">Quantity: 1</p>
+                    </div>
+                    <div class="cart-price">
+                      <p>100,25kr</p>
+                    </div>
+                  </div>
+                  
+            
+            </section>
+        </main>
+        
+        <aside class="extra" role="complementary">
+            <h2>Need help?</h2>
+            <p class="muted">Contact support at mariavrg@lilnook.example</p>
+        </aside>
+        
+        <footer class="site-footer" role="contentinfo">
+            <div>
+                <p>&copy; <span id="year-cart"></span> LilNook — Contact: mariavrg@lilnook.example</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+    document.getElementById('year-cart').textContent = new Date().getFullYear();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,164 @@
+<html lang="en">
+
+<!-- HEADER -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>LilNook - Book shop of favorites</title>
+    <link rel="icon" type="image/png" href="assets/bookicon.png">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<!-- BODY -->
+<body>
+    <div class="page-grid">
+        <header class="site-header" role="banner">
+            <div class="brand">
+                <img src="assets/bookicon.png" alt="LilNook logo" class="logo">
+            <div>
+                <h1>LilNook</h1>
+            </div>
+        </div>
+            
+            <!-- MAIN NAV -->
+
+            <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- SIDE BAR - CATEGORIES -->
+
+        <aside class="sidebar" id="categories" role="complementary">
+            <h2><strong>Categories</strong></h2>
+            <ul class="category-list">
+                <li><a href="#mystery">Mystery</a></li>
+                <li><a href="#romance">Romance</a></li>
+                <li><a href="#fantasy">Fantasy</a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main-content" role="main">
+            <section class="hero">
+                <h2>Enjoy reading!</h2>
+                <p class="lead">Books too good to not read — hand-picked for you.</p>
+            </section>
+
+            <!-- BOOK GRID -->
+             
+            <section class="book-grid" aria-label="Book list"></section>
+
+            <!-- MYSTERY -->
+            <section id="mystery" class="book-section">
+                <h2>Mystery</h2>
+                <div class="book-grid">
+                    <article class="book-card">
+                        <figure>
+                            <img src="assets/thegirlonthetrain.jpeg" alt="Cover: The Girl on the Train" />
+                        </figure>
+                        <h3 class="title">The Girl on the Train</h3>
+                        <p class="author">by Paula Hawkins</p>
+                        <p class="summary">A divorcee becomes entangled in a missing persons investigation that 
+                        promises to send shockwaves throughout her life.</p>
+                        <p class="price">72,22kr</p>
+                        <a class="btn btn-buy" href="cart.html" aria-label="Buy The Girl on The Train">Buy</a>
+                    </article>
+
+                    <article class="book-card">
+                        <figure> 
+                            <img src="assets/murdeinthefamily.jpeg" alt="Cover: Murder in the Family" />
+                        </figure>
+                        <h3 class="title">Murder in the Family</h3>
+                        <p class="author">by Ali Hazelwood</p>
+                        <p class="summary">A shocking thriller about a cold case, a fictional true crime series, 
+                        and the family caught in the middle.</p>
+                        <p class="price">143,19kr</p>
+                        <a class="btn btn-buy" href="cart.html" aria-label="Buy Murder in the Family">Buy</a>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- ROMANCE -->
+
+            <section id="romance" class="book-section">
+                <h2>Romance</h2>
+                <div class="book-grid">
+
+                    <article class="book-card">
+                        <figure>
+                            <img src="assets/beachread.jpeg" alt="Cover: Beach Read" />
+                        </figure>
+                        <h3 class="title">Beach Read</h3>
+                        <p class="author">by Emily Henry</p>
+                        <p class="summary">A romance writer who no longer believes in love and a literary writer stuck in a rut 
+                        engage in a summer-long challenge that may just upend everything they believe about happily ever afters.</p>
+                        <p class="price">105,00kr</p>
+                        <a class="btn btn-buy" href="cart.html" aria-label="Beach Read">Buy</a>
+                    </article>
+
+                    <article class="book-card">
+                        <figure> 
+                            <img src="assets/thelovehypothesis.jpeg" alt="Cover: The Love Hypothesis" />
+                        </figure>
+                        <h3 class="title">The Love Hypothesis</h3>
+                        <p class="author">by Ali Hazelwood</p>
+                        <p class="summary">When a fake relationship between scientists meets the irresistible force of attraction, 
+                        it throws one woman's carefully calculated theories on love into chaos.</p>
+                        <p class="price">117,97kr</p>
+                        <a class="btn btn-buy" href="cart.html" aria-label="Buy The Love Hypothesis">Buy</a>
+                        </article>
+
+                </div>
+            </section>
+
+            <!-- FANTASY -->
+
+            <section id="fantasy" class="book-section">
+                <h2>Fantasy</h2>
+                <div class="book-grid">
+
+                    <article class="book-card">
+                        <figure>
+                            <img src="assets/thehobbit.jpeg" alt="Cover: The Hobbit" />
+                        </figure>
+                        <h3 class="title">The Hobbit</h3>
+                        <p class="author">by J.R.R. Tolkien</p>
+                        <p class="summary">The Hobbit is the unforgettable story of Bilbo, 
+                        a peace-loving hobbit, who embarks on a strange and magical adventure.</p>
+                        <p class="price">100,25kr</p>
+                        <a class="btn btn-buy" href="cart.html" aria-label="Buy The Hobbit">Buy</a>
+                    </article>
+
+                    <article class="book-card">
+                        <figure>
+                            <img src="assets/thelion.jpeg" alt="Cover: The Lion, the Witch and the Wardrobe" />
+                        </figure>
+                        <h3 class="title">The Lion, the Witch and the Wardrobe</h3>
+                        <p class="author">by C.S. Lewis</p>
+                        <p class="summary">Four kids travel to the magical land of Narnia where they must battle 
+                        an evil queen with the direction of the lion, Aslan.</p>
+                        <p class="price">57,52kr</p>
+                        <a class="btn btn-buy" href="cart.html" aria-label="Buy The Lion, the Witch and the Wardrobe">Buy</a>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+        
+        <!-- FOOTER -->
+
+        <footer class="site-footer" role="contentinfo">
+            <div>
+                <p>&copy; <span id="year"></span> LilNook — Contact: mariavrg@lilnook.example</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
