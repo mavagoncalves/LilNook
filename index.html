@@ -34,26 +34,31 @@
         <!-- SIDE BAR - CATEGORIES -->
 
         <aside class="sidebar" id="categories" role="complementary">
-            <h2><strong>Categories</strong></h2>
-            <ul class="category-list">
-                <li><a href="#mystery">Mystery</a></li>
-                <li><a href="#romance">Romance</a></li>
-                <li><a href="#fantasy">Fantasy</a></li>
-            </ul>
+                <details class="dropdown">
+                    <summary class="dropbtn">Categories</summary>
+                    <ul class="dropdown-content">
+                        <li><a href="#mystery">Mystery</a></li>
+                        <li><a href="#romance">Romance</a></li>
+                        <li><a href="#fantasy">Fantasy</a></li>
+                    </ul>
+                </details>
         </aside>
+
+        <aside class="extraspace"></aside>
 
         <!-- MAIN CONTENT -->
 
         <main class="main-content" role="main">
+            <section class="book-section" id="all-books">
+                <h2>All Books</h2>
+            </section>
             <section class="hero">
                 <h2>Enjoy reading!</h2>
                 <p class="lead">Books too good to not read — hand-picked for you.</p>
             </section>
-
+            
             <!-- BOOK GRID -->
-             
-            <section class="book-grid" aria-label="Book list"></section>
-
+        
             <!-- MYSTERY -->
             <section id="mystery" class="book-section">
                 <h2>Mystery</h2>
@@ -81,7 +86,6 @@
                         <p class="price">143,19kr</p>
                         <a class="btn btn-buy" href="cart.html" aria-label="Buy Murder in the Family">Buy</a>
                     </article>
-
                 </div>
             </section>
 
@@ -151,7 +155,7 @@
                 </div>
             </section>
         </main>
-        
+
         <!-- FOOTER -->
 
         <footer class="site-footer" role="contentinfo">
